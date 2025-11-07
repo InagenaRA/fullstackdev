@@ -6,37 +6,158 @@
     <title>Belajar HTML</title>
 </head>
 <body>
-    <h1>HTML</h1>
-
-    <p><b>HyperText Markup Language (HTML)</b> adalah <a href="https://id.wikipedia.org/wiki/Bahasa_markah">bahasa markah</a> standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.</p>
-
-    <p>Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan untuk penampilan dokumen.</p>
-    
-    <h1>Sejarah</h1>
-    <h2>24 November 1995</h2>
-    <p>HTML 2.0 dipublikasikan sebagai IETF RFC 1866. Penambahan RFC memperbanyak kemampuan untuk:</p>
-    <ul>
-        <li>November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)</li>
-        <ol>
-            <li>sub lis 1</li>
-            <li>sub lis 2</li>
-            <li>sub lis 3</li>
-        </ol>
-        <li> November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)</li>
-        <li>Mei 1996: RFC 1942 (tabel)</li>
-        <li>Agustus 1996: RFC 1980 (peta gambar berbasis klien)</li>
-        <li>Januari 1997: RFC 2070 (internasionalisasi)</li>
-    </ul>
+    <main> <!--bagian utama-->
+        <section>
+            <h1>HTML</h1> <!--belajar dari web mdn-->
+            <hr>
+            <p><b>HyperText Markup Language (HTML)</b> adalah <a href="https://id.wikipedia.org/wiki/Bahasa_markah">bahasa markah</a> standar untuk dokumen yang dirancang untuk ditampilkan di peramban <span>internet</span>. <br>Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.</p>
+            <p>Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan untuk penampilan dokumen.</p>
+            
+            <h1>Sejarah</h1>
+            <p>Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee, dan juga seorang kontraktor di CERN (Organisasi Eropa untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi dokumen. Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet. <sup>[2]</sup> Berners-Lee menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang sama, Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya <sub>[3]</sub> sejak 1990 dia mendaftar[4] "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah ensiklopedia. <br> <br>
+            Penjelasan pertama yang dibagi untuk umum dari HTML adalah sebuah dokumen yang disebut "Tanda HTML", pertama kali disebutkan di Internet oleh Tim Berners-Lee pada akhir 1991.[5] Tanda ini menggambarkan 18 elemen awal mula, versi sederhana dari HTML. Kecuali untuk tag hyperlink, yang sangat dipengaruhi oleh SGMLguid, in-house Standard Generalized Markup Language (SGML) berbasis format dokumen di CERN. Sebelas elemen ini masih ada di HTML 4.[6]</p>
+        </section>
+        <article>
+            <h2>24 November 1995</h2>
+            <p>HTML 2.0 dipublikasikan sebagai IETF RFC 1866. Penambahan RFC memperbanyak kemampuan untuk:</p>
+            <ul>
+                <li>November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)</li>
+                <ol>
+                    <li>sub lis 1</li>
+                    <li>sub lis 2</li>
+                    <li>sub lis 3</li>
+                </ol>
+                <li> November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)</li>
+                <li>Mei 1996: RFC 1942 (tabel)</li>
+                <li>Agustus 1996: RFC 1980 (peta gambar berbasis klien)</li>
+                <li>Januari 1997: RFC 2070 (internasionalisasi)</li>
+            </ul>
+        </article>
+        
+    </main>
+    <nav><!--nav digunakan untuk mengumpulkan link untuk berpindah pindah halaman-->
+        <a href="index.html">halaman home</a>
+        <a href="about.html">halaman about</a>
+    </nav>
 
     <img
         class="fit-picture"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png"
         alt="HTML LOGO" />
+    logo copyright
+    <sup>&copy;</sup> 	<!-- ini adalah contoh simbol atau entity code-->
+
+<br><br><br>
+    <table border="1">
+        <caption>
+            Front-end web developer course 2021
+        </caption>
+        <thead>
+            <tr>
+            <th scope="col">Person</th>
+            <th scope="col" colspan="2">Most interest in</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Chris</th>
+                <td>HTML tables</td>
+                <td rowspan="2">22</td>
+            </tr>
+            <tr>
+                <th scope="row">Dennis</th>
+                <td>Web accessibility</td>
+            
+            </tr>
+            <tr>
+                <th scope="row">Sarah</th>
+                <td>JavaScript frameworks</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <th scope="row">Karen</th>
+                <td>Web performance</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Average age</th>
+                <td >33</td>
+            </tr>
+        </tfoot>
+    </table><br><br><br>
+<h1>formulir</h1>
+<form action="/daftar" method="get">
+    <input type="button" value="daftar">
+    <button type="button">tombol biasa</button>
+    <p>
+        <label for="nama">name</label>
+        <input type="text" placeholder="name" id="nama" name="nama">
+    </p>
+    <div>
+        <label for="email">email</label>
+        <input type="email" placeholder="email" id="email" name="email">
+    </div>
+    
+    <label for="password">password</label>
+    <input type="password" placeholder="password" id="password" name="password">
+
+    <label for="Phone">Phone</label>
+    <input type="number" placeholder=" phone number" id="Phone" name="Phone">
+
+    <label for="color">Color</label>
+    <input type="color" placeholder="color" id="color">
+
+    <button type="submit">kirim</button>
+</form>
+<hr>
+<form action="/Order">
+    <div>
+        <label for="">Baju</label>
+        <input type="radio" value="kemeja" name="baju" id="" checked> <label for="kemeja">kemeja</label>
+        <input type="radio" value="kaos" name="baju" id=""> <label for="kaos">kaos</label>
+        
+    </div>
+    <div>
+        <label for="ukuran">ukuran</label>
+        <select name="ukuran" id="ukuran">
+            <option value=""></option>
+            <option value="s">small</option>
+            <option value="m">medium</option>
+            <option value="l" selected>large</option>
+            <option value="xl">extra large</option>
+        </select>
+
+    </div>
+    <div>
+        <label for="term">setuju</label>
+        <input type="checkbox" name="term" id="term" checked>
+    </div>
+    <div>
+        <div>
+            <label for="note">Note</label>
+        </div>
+        <textarea name="note" id="note" rows="4" cols="30"></textarea>
+    </div>
+    <button type="submit">Order</button>
+</form>
+<hr>
+<h1>Validation</h1>
+<form action="validation">
+    <input type="text" name="input" id="" minlength="7" required>
+    <input type="number" name="" id="">
+    <button type="submit">submit</button>
+</form>
 
     <!-- Ini adalah bagian komentar untuk memberi catatan-->
+     <footer><!--footer digunakan untuk catatan bawah-->
+        <div>pt geno sukses</div>
+        <div>ini adalah file awal pembuatan</div>
+        <div>perubahan 1</div>
+     </footer>
 
-    <div>pt geno sukses</div>
-    <div>ini adalah file awal pembuatan</div>
-    <div>perubahan 1</div>
+    
 </body>
 </html>
