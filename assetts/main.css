@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coba1</title>
-</head>
-<body>
-    <div>pt geno sukses</div>
-    <div>ini adalah file css</div>
-</body>
-</html>
+h1 {
+    color: red;
+    
+    align-content: center;
+    alignment-baseline: central;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    background-color: rgb(172, 238, 207);
+    text-align: justify;
+    font-weight: 700;
+    line-height: 1; 
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+button {
+    color: rgb(53, 52, 52);
+    background-color: green;
+}
