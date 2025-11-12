@@ -5,13 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar HTML</title>
     <link rel="stylesheet" href="assetts/main.css">
-    <!--
+    
      <style>
         h1 {
             color: red;
         }
+        section ul div {
+            background-color: rgb(208, 135, 40);
+        }
+        .aman > div {
+            color: rgb(219, 26, 26);
+        }
+        a + button {
+            background-color: aqua;
+        }
+        input[type="text"] {
+            color: red;
+        }
+        section p {
+            cursor: pointer;
+        }
+        section h2::first-letter {
+            font-size: xx-large;
+        }
     </style>
-    -->
+    
    
 </head>
 <body>
@@ -23,7 +41,7 @@
             <p>Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan untuk penampilan dokumen.</p>
             
             <h1>Sejarah</h1>
-            <p>Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee, dan juga seorang kontraktor di CERN (Organisasi Eropa untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi dokumen. Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet. <sup>[2]</sup> Berners-Lee menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang sama, Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya <sub>[3]</sub> sejak 1990 dia mendaftar[4] "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah ensiklopedia. <br> <br>
+            <p>Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee, dan juga seorang kontraktor di <b class="mark">CERN</b> ( <i class="mark">Organisasi Eropa untuk Riset Nuklir</i> Organisasi Eropa untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi dokumen. Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet. <sup>[2]</sup> Berners-Lee menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang sama, Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya <sub>[3]</sub> sejak 1990 dia mendaftar[4] "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah ensiklopedia. <br> <br>
             Penjelasan pertama yang dibagi untuk umum dari HTML adalah sebuah dokumen yang disebut "Tanda HTML", pertama kali disebutkan di Internet oleh Tim Berners-Lee pada akhir 1991.[5] Tanda ini menggambarkan 18 elemen awal mula, versi sederhana dari HTML. Kecuali untuk tag hyperlink, yang sangat dipengaruhi oleh SGMLguid, in-house Standard Generalized Markup Language (SGML) berbasis format dokumen di CERN. Sebelas elemen ini masih ada di HTML 4.[6]</p>
         </section>
         <article>
@@ -32,8 +50,8 @@
             <ul>
                 <li>November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)</li>
                 <ol>
-                    <li>sub lis 1</li>
-                    <li>sub lis 2</li>
+                    <li id="list1">sub lis 1</li>
+                    <li class="mark">sub lis 2</li>
                     <li>sub lis 3</li>
                 </ol>
                 <li> November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)</li>
@@ -42,7 +60,37 @@
                 <li>Januari 1997: RFC 2070 (internasionalisasi)</li>
             </ul>
         </article>
-        
+        <h1>bagian html</h1>
+        <section>
+                <h2> head</h2>
+                <div class="aman">
+                    Dokumen HTML diapit oleh tag head. Di dalam bagian ini biasanya dimuat tag title yang menampilkan judul halaman pada titlenya browser. Selain itu bookmark juga menggunakan tag title untuk memberi mark suatu web site. Browser menyimpan “title” sebagai bookmark dan juga untuk keperluan pencarian (searching) biasanya title digunakan sebagai keyword. Header juga memuat tag META yang biasanya dapat digunakan untuk menentukan informasi tertentu mengenai dokumen HTML. Pengguna bisa menentukan author name, keywords, dan lainnya pada tag META.
+                </div>
+                <h2>body</h2>
+                <div class="aman">
+                    Bagian "body", yang dinyatakan dengan tag body, merupakan tubuh atau isi dari dokumen HTML di mana pengguna meletakkan informasi yang akan ditampilkan pada browser. 
+                    <div>direct descedant</div> 
+                    <a href="">link</a>
+                    <button>ajdacent selector</button>
+                    <ol>
+                        <li> bagaian 1</li>
+                        <li>bagian 2</li>
+                    </ol>
+                    <div>direct</div>
+                </div>
+                <h2>tag</h2>
+                <div class="aman">
+                    HTML bersifat case-insensitive, yang berarti tidak membedakan penggunaan huruf besar ataupun huruf kecil dari suatu elemen. Suatu elemen HTML terdiri dari tag-tag beserta teks yang ada dalam tag-tag tersebut. Tag ini dinyatakan dengan tanda kurung sudut 
+                    <ol>
+                        <li>ag awal, dinyatakan dalam bentuk nama tag </li>
+                        <li>Tag akhir, dinyatakan dalam bentuk /nama tag></li>
+                    </ol>
+
+                </div>
+                <h2>atribut</h2>
+            
+
+        </section>
     </main>
     <nav><!--nav digunakan untuk mengumpulkan link untuk berpindah pindah halaman-->
         <a href="index.html">halaman home</a>
