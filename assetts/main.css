@@ -1,9 +1,13 @@
-h1 {
+* {
+    background-color: antiquewhite;
+}
+
+h1 h2 {
     color: red;
     
     align-content: center;
     alignment-baseline: central;
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
 }
 
@@ -18,4 +22,12 @@ p {
 button {
     color: rgb(53, 52, 52);
     background-color: green;
+}
+
+#list1 {
+    color: rgb(10, 226, 10);
+}
+
+.mark {
+    background-color: yellow;
 }
