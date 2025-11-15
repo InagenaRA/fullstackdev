@@ -2,14 +2,32 @@
     background-color: antiquewhite;
 }
 
-h1 h2 {
-    color: red;
+h1 {
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid green;
+    margin: 20px;
+}
+section p {
+    border-width: 5px;
+    border-style: groove;
+    border-top-style: double;
+    border-top-width: 10px;
+    border-color: blueviolet;
+
+    padding: 10px 20px 10px 20px;
     
+    margin: 20px;
+}
+
+/* h1 h2 {
+    color: red;
     align-content: center;
     alignment-baseline: central;
     text-align: left;
     text-decoration: underline;
-}
+} */
 
 p {
     background-color: rgb(172, 238, 207);
@@ -30,4 +48,75 @@ button {
 
 .mark {
     background-color: yellow;
+}
+table, #form {
+    display: inline-block;
+    /*display: inline;*/
+}
+#container {
+    background-color: aqua;
+    width: 90%;
+    /* height: 800px; */
+    margin: 0 auto;
+    border: 5px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+div:nth-of-type(1) {
+    /* flex-grow: 1; berdasarkan flex direction */
+    flex-shrink: 2; /*kebalikan dari flex-grow*/
+}
+/* div:nth-of-type(2) {
+    align-self: flex-end;
+    flex-grow: 1; 
+} */
+
+#container div {
+    width: 200px;
+    height: 100px;
+    /* flex-basis: 30   0px; */
+}
+
+nav ul {
+    font-size: 1.5em;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: space-between; */
+    /* align-items: center;  */
+}
+
+ul , li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 25px;
+        color: deepskyblue;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+        color: goldenrod;
+    }
+   
+}
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 14px;
+        color: violet;
+    }
+     nav ul {
+        flex-direction: column;
+    }
 }
