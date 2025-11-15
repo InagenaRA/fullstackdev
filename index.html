@@ -33,9 +33,28 @@
    
 </head>
 <body>
+    <nav><!--nav digunakan untuk mengumpulkan link untuk berpindah pindah halaman-->
+        <ul>
+            <li><a href="index.html">halaman home</a></li>
+            <li> <a href="about.html">halaman about</a></li>
+            <li><a href="#home">Profile</a></li>
+            <li><a href="#home">Contact</a></li>
+            <li> <a href="#home">Register</a></li>
+        </ul>
+    </nav>
+    <h1>Media Query</h1>
     <main> <!--bagian utama-->
+        <h1>flexbox</h1>
+        <section id="container">
+            <div style="background-color: blue;">asdfasd</div>
+            <div style="background-color: rgb(32, 123, 221);" >2</div>
+            <div style="background-color: rgb(0, 255, 4);" >3</div>
+            <div style="background-color: rgb(255, 98, 0);" >4</div>
+            <div style="background-color: rgb(255, 0, 43);">5</div>
+
+        </section>
         <section>
-            <h1 >HTML</h1> <!--belajar dari web mdn-->
+            <h1>HTML</h1> <!--belajar dari web mdn-->
             <hr>
             <p><b>HyperText Markup Language (HTML)</b> adalah <a href="https://id.wikipedia.org/wiki/Bahasa_markah">bahasa markah</a> standar untuk dokumen yang dirancang untuk ditampilkan di peramban <span>internet</span>. <br>Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.</p>
             <p>Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan untuk penampilan dokumen.</p>
@@ -88,14 +107,8 @@
 
                 </div>
                 <h2>atribut</h2>
-            
-
         </section>
     </main>
-    <nav><!--nav digunakan untuk mengumpulkan link untuk berpindah pindah halaman-->
-        <a href="index.html">halaman home</a>
-        <a href="about.html">halaman about</a>
-    </nav>
 
     <img
         class="fit-picture"
@@ -144,8 +157,8 @@
                 <td >33</td>
             </tr>
         </tfoot>
-    </table><br><br><br>
-<h1>formulir</h1>
+    </table>
+<h1 id="form">formulir</h1>
 <form action="/daftar" method="get">
     <input type="button" value="daftar">
     <button type="button">tombol biasa</button>
